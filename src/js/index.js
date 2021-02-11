@@ -1,6 +1,6 @@
-const a = 10;
-let myFunction = (a) => {
-	console.log("aagdadgagd" + a);
-};
-myFunction();
-Promise.resolve().finally();
+require("@babel/polyfill");
+import Search from "./model/search";
+
+let search = new Search("pasta");
+
+search.doSearch().then((r) => console.log(r));

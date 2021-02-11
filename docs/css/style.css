@@ -172,7 +172,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 3rem;
-  transition: all .3s; }
+  transition: all .1s; }
   .search:focus-within {
     transform: translateY(-2px);
     box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08); }

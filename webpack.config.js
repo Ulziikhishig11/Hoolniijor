@@ -4,11 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	entry: "./src/js/index.js",
 	output: {
-		filename: "main.js", // main.js iig index.html dotor inject hiij ugnu
-		path: path.resolve(__dirname, "dist"),
+		filename: "js/main.js", // main.js iig index.html dotor inject hiij ugnu
+		path: path.resolve(__dirname, "docs"),
 	},
 	devServer: {
-		contentBase: './dist',
+		contentBase: './docs',
 	},
 
 	plugins: [
