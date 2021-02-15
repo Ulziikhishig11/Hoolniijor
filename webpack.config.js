@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: "development",
 	entry: "./src/js/index.js",
 	output: {
 		filename: "js/main.js", // main.js iig index.html dotor inject hiij ugnu
@@ -10,12 +11,13 @@ module.exports = {
 	devServer: {
 		contentBase: './docs',
 	},
+  devtool:"inline-source-map",
 
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: "index.html",
-			template: "src/index.html", // src-d bga index.html iig dist folder ruu hiine, ene template bhgu bol shineer index.html uusne
-		}),
+			template: "src/index.html" // src-d bga index.html iig dist folder ruu hiine, ene template bhgu bol shineer index.html uusne
+		})
 	],
     module: {
         rules: [
